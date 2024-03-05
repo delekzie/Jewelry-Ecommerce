@@ -1,0 +1,46 @@
+
+.transparent{
+    width: 400px;
+    background: transparent;
+    border-bottom: 0.5px solid #C3A27E;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 15px;
+    color: #C3A27E;
+}
+.transitRight {
+  transform: translate(50px, 0px); /* Moves the element 50 pixels down along the Y-axis */
+  transition: transform 0.5s ease-in-out; /* Adds a transition effect to the transform property over 0.5 seconds with an ease-in-out timing function */
+}
+
+.transitLeft {
+  transform: translate(-50px, 0px); /* Moves the element 50 pixels down along the Y-axis */
+  transition: transform 0.5s ease-in-out; /* Adds a transition effect to the transform property over 0.5 seconds with an ease-in-out timing function */
+}
+
+.parent{
+    width: 400px;
+    background: transparent;
+    border-bottom: 0.5px solid #0E333C;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 15px;
+    color: #0E333C;
+}
+
+.container {
+    position: relative;
+    /* Other styles for the container */
+  }
+  
+  .background-image {
+  
+    /* position: absolute; */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./src/assets/man.webp'); /* Specify the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Other background styles */
+  }
