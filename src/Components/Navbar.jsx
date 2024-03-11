@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" shadow-lg fixed top-0 w-full z-10 bg-white">
+    <nav className=" shadow-lg fixed top-0 w-full z-10 bg-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex items-center justify-between h-14 ">
           <div className="flex items-center">
@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="hidden md:block ml-20">
               <ul className="ml-8 flex items-center space-x-8 text-sm">
                    <li className="">
-                    <Link to=""  className=" hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900" >NEW</Link>
+                    <Link to="/new"  className=" hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900" >NEW</Link>
                    </li>
                    <li className="">
                     <Link to=""  className=" hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900">WOMEN'S</Link>
@@ -43,9 +43,10 @@ const Navbar = () => {
                    </li>
                    <div>
                    <p className="ml-4 rounded-md bg-gray-800 hover:brightness-75 px-4 py-2">
-                    <Link to="/signuser"  className="text-gray-50 font-semibold" href="">Get Started with Us</Link>
+                    <Link to="/signuser"  className="text-gray-50 font-semibold" href="">Get Started </Link>
                    </p>
                    </div>
+
               </ul>
             </div>
           </div>

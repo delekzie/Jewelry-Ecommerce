@@ -29,7 +29,7 @@ function Spring() {
                 <div key={index}>
                     <img src={gift.image} alt="" className="mx-auto lg:mx-0 mt-3 lg:mt-0 h-[292px] lg:w-[260px]"/>
                     <div className='flex justify-center' >
-                        <p className=" text-center text-sm lg:text-lg mt-[-40px] border-b-2 border-gray-600">{gift.name} </p></div>
+                        <p className=" text-center text-sm lg:text-lg  mt-[-30px]">{gift.name} </p></div>
                 </div>
             ))}
           </div>

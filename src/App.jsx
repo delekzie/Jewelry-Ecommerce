@@ -11,6 +11,7 @@ import Return from './Components/Return';
 import Dashboard from './Components/Dashboard';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import New from './Components/New';
 
 
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/terms" element={<Terms/>}/>
         <Route path="/return" element={<Return/>}/>
         <Route path="/" element={<Dashboard/>}/>
+        <Route path="/new" element={<New/>}/>
 
     </Routes>
     <Footer/>

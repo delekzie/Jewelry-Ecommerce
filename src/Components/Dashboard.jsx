@@ -20,11 +20,10 @@ function Dashboard() {
                <button className='px-8 py-2 mt-4 bg-gray-50 text-black rounded-sm  font-semibold' >SHOP NOW</button>
           </div>
         </div>
-
-        <Imageslider/>
-        <Category/>
-        <Middle/>
-        <Spring/>
+       <Imageslider/>
+       <Category/>
+       <Middle/>
+       <Spring/>
        <Middle2/>
        <Middle3/>
        <Middle4/>

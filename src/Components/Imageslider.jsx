@@ -84,7 +84,7 @@ function Imageslider() {
                 id: 8,
                 image:  selected9,
                 name: "Caviar Icon Silver Caviar Beaded Bracelet",
-                price: 185,
+                price: 185
             }
       ]
     // How to display a product 
