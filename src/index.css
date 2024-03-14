@@ -44,3 +44,15 @@
     background-repeat: no-repeat;
     /* Other background styles */
   }
+  
+  .backG{
+  
+    /* position: absolute; */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./src/assets/menHome.webp'); /* Specify the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Other background styles */
+  }

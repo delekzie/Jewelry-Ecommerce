@@ -18,10 +18,10 @@ const Navbar = () => {
                     <Link to="/new"  className=" hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900" >NEW</Link>
                    </li>
                    <li className="">
-                    <Link to=""  className=" hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900">WOMEN'S</Link>
+                    <Link to="/women"  className=" hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900">WOMEN'S</Link>
                    </li>
                    <li className="">
-                    <Link to=""  className="hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900" >MEN'S</Link>
+                    <Link to="/men"  className="hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900" >MEN'S</Link>
                    </li>
                    <li className="">
                     <Link to=""  className="hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900" >BEST SELLER</Link>

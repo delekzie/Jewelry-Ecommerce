@@ -58,14 +58,16 @@ function New() {
       new Set(newArrivals.flatMap((home) => home.collection.split(", ")))
     );
 
+    
+
     // the third filter
     const handleColorChange = (e) => {
-     const navColor = e.target.value;
-     setSelectedColor(navColor);
+       const navColor = e.target.value;
+      setSelectedColor(navColor);
 
-     let filteredProjects = newArrivals.filter((trash) =>
-    typeof trash.color === "string" && (navColor ? trash.color.includes(navColor) : true)
-);
+      let filteredProjects = newArrivals.filter((trash) =>
+      typeof trash.color === "string" && (navColor ? trash.color.includes(navColor) : true)
+     );
       // let filteredProjects = newArrivals.filter((trash) =>
       // navColor ? trash.color.includes(navColor) : true
       // );
@@ -129,8 +131,9 @@ function New() {
         <div className='grid grid-cols-2 lg:grid-cols-4 mt-5 mx-auto'>
           {filteredProjects.map((project, index) => (
             <div key={index} className='border border-gray-100 flex flex-col items-center text-center w-full lg:h-[65vh] lg:w-[24vw]'>
-                <img className='w-[250px]  px-3' src={project.image} alt={project.id} />
-              <h3 className='text-sm  px-3'>{project.collection}</h3>
+              <p className='py-2 px-3 bg-gray-50 rounded-sm m-2 font-semibold text-xs'>{project.repo}</p>
+                <img className='w-[230px]  px-3' src={project.image} alt={project.id} />
+              <h3 className='text-sm  px-3 mt-2'>{project.collection}</h3>
               <p className='text-lg my-2  px-3'> {project.description}</p>
               <p className='text-lg  px-3'>${project.price}</p>
               <p className='text-sm  px-3'>{project.color}</p>
@@ -145,8 +148,6 @@ function New() {
       <p className='border border-gray-200 px-4 py-2 text-gray-500' onClick={()=> handleClick("view1")}>1</p>
       <p className='border border-gray-200 px-4 py-2 text-gray-500' onClick={()=> handleClick("view2")}>2</p>
       <p className='border border-gray-200 px-4 py-2 text-gray-500' onClick={()=> handleClick("view3")}>3</p>
-      <p className='border border-gray-200 px-4 py-2 text-gray-500' onClick={()=> handleClick("view4")}>4</p>
-      <p className='border border-gray-200 px-4 py-2 text-gray-500' onClick={()=> handleClick("view5")}>5</p>
     </div>
     </>
   )

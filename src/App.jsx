@@ -12,6 +12,8 @@ import Dashboard from './Components/Dashboard';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import New from './Components/New';
+import Women from './Components/Women';
+import Men from './Components/Men';
 
 
 
@@ -30,10 +32,8 @@ function App() {
         pauseOnHover
         theme="light" 
       /> 
-
-
-
     <Navbar/>
+
     <Routes>
         <Route path="/signuser" element={<User/>}/>
         <Route path="/login" element={<Login/>}/>
@@ -43,8 +43,11 @@ function App() {
         <Route path="/return" element={<Return/>}/>
         <Route path="/" element={<Dashboard/>}/>
         <Route path="/new" element={<New/>}/>
-
+        <Route path='/women' element={<Women/>}/>
+        <Route path='/men' element={<Men/>}/>
     </Routes>
+
+
     <Footer/>
     </>
   )
