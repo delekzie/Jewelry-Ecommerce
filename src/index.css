@@ -56,3 +56,25 @@
     background-repeat: no-repeat;
     /* Other background styles */
   }
+  .hotman{
+  
+    /* position: absolute; */
+    left: 0;
+    width: 100%; 
+    height: 100vh;
+    background-image: url('./src/assets/oldman.webp'); /* Specify the path to your background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Other background styles */
+  }
+  .hottest{
+  
+    /* position: absolute; */
+    left: 0;
+    width: 100%; 
+    height: 100vh;
+    background-image: url('./src/assets/menE.webp'); /* Specify the path to your background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Other background styles */
+  }

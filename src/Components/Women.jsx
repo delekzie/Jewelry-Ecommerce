@@ -50,37 +50,40 @@ function Women() {
     )
   return (
     <>
-        <div>
-          <div className=' mt-[15%] lg:mt-[5%] '>
-            <h1 className='text-4xl py-4 text-center'>Jewelry</h1>
-            <section className='py-3'>
-              <div className='p-3 bg-gray-100 flex space-x-5'>
-              <p>Filter by: </p>
+          <div className=' mt-[15%] lg:mt-[6%] '>
+            <h1 className='text-4xl py-4 text-center'>JEWERLY</h1>
+          </div>
+        <section className='mt-7 w-full'>
+              <div className='p-6 bg-gray-50 flex space-x-5'>
+              <p className='text-gray-500'>Filter by: </p>
               <select className="bg-transparent outline-none" value={selectedCategory} onChange={handleCategoryChange}>
                 <option value="">Category</option>
                 {myCategories.map((navCategory, index) => (
                   <option key={index} value={navCategory}>
-                     {navCategory}
+                     {navCategory.toLowerCase()}
                   </option>
                 ))}
               </select>
+              <select name="" id="" className="bg-transparent outline-none" >
+                <option value="">Material</option>
+            </select>
                    
                    <select name="" className="bg-transparent outline-none" value={selectedCollection} onChange={handleCollectionChange}>
                     <option value="">Collection</option>
                     {myCollections.map((navCollection, index) =>(
                       <option value={navCollection} key={index}>
-                        {navCollection}
+                        {navCollection.toLowerCase()}
                       </option>
                     ))}
                    </select>
-              <p className="mx-4">{womenPrdts.length + " items"}</p>
+              <p>{womenPrdts.length + " items"}</p>
               </div>
             </section>
 
             {/* DISPLAY PRODUCT */}
 
-            <section>
-            <div className='grid grid-cols-2 lg:grid-cols-4 mt-5 mx-3'>
+            <section className=''>
+            <div className='grid grid-cols-2 lg:grid-cols-4 mt-1 mx-3 '>
           {filteredProjects.map((project, index) => (
             <div key={index} className='border border-gray-100 flex flex-col items-center text-center w-full lg:h-[65vh] lg:w-[24vw]'>
               <p className='py-2 px-3 bg-gray-50 rounded-sm m-2 font-semibold text-xs'>{project.repo}</p>
@@ -93,15 +96,13 @@ function Women() {
             </div>
           ))}
         </div>
-            </section>
+      </section>
 
-            <div className='flex items-center justify-center my-10 space-x-2'>
+      <div className='flex items-center justify-center my-10 space-x-2'>
               <p className='border border-gray-200 px-4 py-2 text-gray-500'>1</p>
               <p className='border border-gray-200 px-4 py-2 text-gray-500'>2</p>
               <p className='border border-gray-200 px-4 py-2 text-gray-500'>3</p>
             </div>
-          </div>
-        </div>
     </>
   )
 }

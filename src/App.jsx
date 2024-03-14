@@ -14,6 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 import New from './Components/New';
 import Women from './Components/Women';
 import Men from './Components/Men';
+import Males from './Components/Males';
 
 
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/new" element={<New/>}/>
         <Route path='/women' element={<Women/>}/>
         <Route path='/men' element={<Men/>}/>
+        <Route path='/menjewelry' element={<Males/>}/>
     </Routes>
 
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <>
-        <div className='bg-gray-100 text-gray-900 text-xs px-8 py-5 mt-5'>
+        <div className='bg-gray-50 text-gray-900 text-xs px-8 py-5 mt-5'>
             <ul  className='my-8'>
                 <h1  className='my-5 font-semibold'>Footer Menu</h1>
                 <li className="my-4 cursor-pointer">

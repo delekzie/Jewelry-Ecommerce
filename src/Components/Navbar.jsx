@@ -46,12 +46,12 @@ const Navbar = () => {
                     <Link to="/signuser"  className="text-gray-50 font-semibold" href="">Get Started </Link>
                    </p>
                    </div>
-
+                   <p></p>
               </ul>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="sr-only">Open main menu</span>
               <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
@@ -67,13 +67,13 @@ const Navbar = () => {
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
            <li className="mx-4 py-2 lg:py-0">
-          <Link to=""  className="" href="">NEW</Link>
+          <Link to="/new"  className="" href="">NEW</Link>
         </li>
         <li className="mx-4 py-2 lg:py-0">
-          <Link to=""  className="" href="">WOMEN'S</Link>
+          <Link to="/women"  className="" href="">WOMEN'S</Link>
          </li>
         <li className="mx-4 py-2 lg:py-0">
-          <Link to=""  className="" href="">MEN'S</Link>
+          <Link to="/men"  className="" href="">MEN'S</Link>
         </li>
         <li className="mx-4 py-2 lg:py-0">
           <Link to="/"  className="" href="">BEST SELLER</Link>
@@ -93,8 +93,8 @@ const Navbar = () => {
         <li className="mx-4 py-2 lg:py-0">
           <Link to=""  className="" href="">JUST ARRIVED</Link>
         </li>
-        <li className="mx-4- rounded-lg bg-carton hover:brightness-50 px-4 py-2 overflowX-hidden">
-          <Link to="/signuser"  className="" href="">Get Started</Link>
+        <li className="mx-4 rounded-lg bg-gray-900 hover:brightness-50 px-2 py-4 text-center text-white w-[30%] ">
+          <Link to="/signuser"  className="" href="">GET STARTED</Link>
           </li>
         </ul>
       </div>

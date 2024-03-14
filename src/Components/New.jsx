@@ -97,9 +97,10 @@ function New() {
       </div>
       <h1 className='text-3xl text-center py-10'>New Arrivals</h1>
       <section className="flex flex-wrap ">
-        <div className='bg-gray-200 w-full p-3 space-x-4 flex'>  
+        <div className='bg-gray-50 w-full p-6 space-x-4 flex'>  
+        <p className='text-gray-500'>Filter by: </p>
           <select className='bg-transparent outline-none' value={selectedCategory} onChange={handleCategoryChange}>
-            <option value="">Categories</option>
+            <option value="">Category</option>
             {myCategories.map((category, index) => (
               <option key={index} value={category}>
                 {category}
@@ -111,10 +112,14 @@ function New() {
           <option className='' value="">Collection</option>
               {myCollections.map((navCollection, id) => (
               <option key={id} value={navCollection}>
-                {navCollection}
+                {navCollection.toLowerCase()}
               </option>
               ))}
          </select>
+
+         <select name="" id="" className="bg-transparent outline-none" >
+                <option value="">Material</option>
+            </select>
 
           <select  className='bg-transparent outline-none' value={selectedColor} onChange={handleColorChange}>
           <option value="">Color</option>
@@ -128,7 +133,7 @@ function New() {
 
         </div>
         {/* THE DISPLAY OF THE PRODUCT */}
-        <div className='grid grid-cols-2 lg:grid-cols-4 mt-5 mx-auto'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 mt-1 mx-auto'>
           {filteredProjects.map((project, index) => (
             <div key={index} className='border border-gray-100 flex flex-col items-center text-center w-full lg:h-[65vh] lg:w-[24vw]'>
               <p className='py-2 px-3 bg-gray-50 rounded-sm m-2 font-semibold text-xs'>{project.repo}</p>
