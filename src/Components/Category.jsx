@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { dataList } from "../data/data";
+import { Link } from "react-router-dom";
 
 function Category() {
   const [isActive, setIsActive] = useState(true);
@@ -74,14 +75,18 @@ function Category() {
 
         <div className="my-2">
           <div className="grid grid-cols-1 lg:grid-cols-5">
+
             {product.map((item, index) => (
-              <div key={index} className="text-center">
+              <Link to={`/product-category/${item.name}`}  key={index} state={item}>
+                <div className="text-center">
                 <img src={item.image} alt="" className="mx-auto lg:mx-0 mt-3 lg:mt-0 h-[290px] w-[255px]" />
                 <div className="flex justify-center">
                 <p className=" text-center mt-3 font-semibold hover:text-gray-900 transition duration-200 border-b-2 border-transparent hover:border-gray-900">{item.name}</p>
                 </div>
               </div>
+              </Link>
             ))}
+
           </div>
         </div>
       </div>

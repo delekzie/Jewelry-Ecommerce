@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
+import { SlHandbag } from "react-icons/sl";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
                     <Link to="/signuser"  className="text-gray-50 font-semibold" href="">Get Started </Link>
                    </p>
                    </div>
-                   <p></p>
+                   <p className='text-xl'><SlHandbag /></p>
               </ul>
             </div>
           </div>

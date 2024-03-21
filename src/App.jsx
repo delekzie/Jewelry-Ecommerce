@@ -15,6 +15,8 @@ import New from './Components/New';
 import Women from './Components/Women';
 import Men from './Components/Men';
 import Males from './Components/Males';
+import Product from './Components/Product';
+import Items from './Components/Items';
 
 
 
@@ -47,6 +49,8 @@ function App() {
         <Route path='/women' element={<Women/>}/>
         <Route path='/men' element={<Men/>}/>
         <Route path='/menjewelry' element={<Males/>}/>
+        <Route path='/product-category/:itemName' element={<Product/>}/>
+        <Route path='/shop-selected/:shopSelect' element={<Items/>} />
     </Routes>
 
 
